@@ -1,0 +1,71 @@
+{% extends 'common_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+
+<style>
+    img {
+       
+        border-radius: 15px;
+    }
+
+    table {
+        width: 350px;
+        height: 86px;
+        border-collapse: collapse;
+        width: 60%;
+    }
+
+    th {
+        border: 1px solid gray;
+        padding-left: 10px;
+
+    }
+
+    td {
+        border: 1px solid gray;
+        padding-left: 10px;
+    }
+</style>
+
+
+{% endblock %}
+
+{% block title %}Blog{% endblock %}
+{% block content %}
+
+
+<section class="section1">
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="{% static 'images/Pediatrician.jpg' %}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th class="ms-5" style="width: 30%;">Topic</th>
+                            <td>How are you</td>
+                        </tr>
+                        <tr>
+                            <th style="width: 30%;">Post Date</th>
+                            <td>20/02/2023</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="description">
+                    <h5 style="font-style: italic;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit explicabo dolor sed dolorem
+                        rerum vel iste ratione ipsam amet, fugit impedit incidunt perferendis quia porro. Libero,
+                        accusamus. Laudantium, sint minima!
+                        Nulla eum rem perferendis laudantium debitis iusto dignissimos ipsum eligendi, quisquam nobis,
+                        natus exercitationem dolores, commodi provident. Fugit voluptatum ratione quibusdam neque, rerum
+                        placeat est dignissimos hic ducimus vero! Facilis.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

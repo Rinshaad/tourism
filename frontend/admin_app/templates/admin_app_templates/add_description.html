@@ -1,0 +1,249 @@
+{% extends 'admin_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+
+
+
+
+{% endblock %}
+
+{% block title %}Add description{% endblock %}
+{% block content %}
+
+<!-- <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h3>Add Description</h3>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section>
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-9">
+
+                <h1 class="mb-4 mt-5">Add Description</h1>
+
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="border-radius: 15px;">
+                    <div class="card-body">
+
+                        <div class="row align-items-center pt-4 pb-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Place</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="text" placeholder="Place" class="form-control form-control-lg" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Country</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg" placeholder="Country" />
+
+                            </div>
+                        </div>
+                        <hr class="mx-n3">
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Bus price</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg" placeholder="Bus price" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Train price</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg" placeholder="Train price" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Flight price</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg" placeholder="Flight price" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Images</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Images 1</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Images 2</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Images 3</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Food price</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg" placeholder="Food price" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Number of person</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg"
+                                    placeholder="Number of person" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Days</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg" placeholder="Days" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Nights</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <input type="email" class="form-control form-control-lg" placeholder="Nights" />
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+
+                                <h6 class="mb-0">Description</h6>
+
+                            </div>
+                            <div class="col-md-9 pe-5">
+
+                                <textarea class="form-control" rows="3" placeholder="Right description..."></textarea>
+
+                            </div>
+                        </div>
+
+                        <hr class="mx-n3">
+
+                        <div class="px-5 py-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Add Description</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

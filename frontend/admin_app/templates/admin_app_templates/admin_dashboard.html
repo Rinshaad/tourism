@@ -1,0 +1,71 @@
+{% extends 'admin_app_templates/base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/style_register.css' %}">
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+<style>
+    .card {
+        /* margin-top: 50%; */
+        padding: 25px;
+        background-color: darksalmon;
+        border: 2px solid black;
+    }
+
+    .number {
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .heading {
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: brown;
+    }
+
+    .box {
+        padding-top: 20px;
+    }
+</style>
+
+
+
+{% endblock %}
+
+{% block title %}Common Home{% endblock %}
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-4 col-sm-12 box">
+                <div class="card text-center">
+                    <h1 class="number">4</h1>
+                    <h5 class="heading">Total Destination</h5>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 box">
+                <div class="card text-center">
+                    <h1 class="number">4</h1>
+                    <h5 class="heading">Total Booking</h5>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 box">
+                <div class="card text-center">
+                    <h1 class="number">4</h1>
+                    <h5 class="heading">Total User</h5>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
